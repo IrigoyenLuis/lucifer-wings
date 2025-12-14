@@ -1,0 +1,75 @@
+{
+  "versionSchema": "1.0",
+  "idExamen": "EGELP_MIEXAMEN_001",
+  "nombreExamen": "Mi simulacro EGEL Plus",
+  "disciplina": "ISOFT",
+
+  "reactivos": [
+
+    {
+      "tipoReactivo": "estandar",
+      "idReactivo": "R-0001",
+      "area": "Disciplinar",
+      "seccion": 1,
+
+      "planteamiento": {
+        "contexto": "Opcional. Puede dejarse vacío.",
+        "pregunta": "Escriba aquí la pregunta."
+      },
+
+      "recursosVisuales": [
+        {
+          "tipo": "imagen",
+          "archivo": "recursos/ejemplo.png",
+          "descripcion": "Opcional"
+        }
+      ],
+
+      "opciones": [
+        { "letra": "A", "texto": "Opción A" },
+        { "letra": "B", "texto": "Opción B" },
+        { "letra": "C", "texto": "Opción C" },
+        { "letra": "D", "texto": "Opción D" }
+      ],
+
+      "respuestaCorrecta": "B"
+    },
+
+    {
+      "tipoReactivo": "multireactivo",
+      "idReactivo": "MR-0001",
+      "area": "Transversal",
+      "seccion": 2,
+
+      "estimulo": {
+        "titulo": "Título del texto o caso",
+        "contenido": "Aquí va el texto, caso o escenario completo.",
+
+        "recursosVisuales": [
+          {
+            "tipo": "imagen",
+            "archivo": "recursos/ejemplo2.png",
+            "descripcion": "Opcional"
+          }
+        ]
+      },
+
+      "preguntas": [
+        {
+          "idPregunta": "MR-0001-P1",
+          "planteamiento": {
+            "pregunta": "Pregunta relacionada con el estímulo."
+          },
+          "opciones": [
+            { "letra": "A", "texto": "Opción A" },
+            { "letra": "B", "texto": "Opción B" },
+            { "letra": "C", "texto": "Opción C" },
+            { "letra": "D", "texto": "Opción D" }
+          ],
+          "respuestaCorrecta": "C"
+        }
+      ]
+    }
+
+  ]
+}
