@@ -141,7 +141,7 @@ Dentro de la carpeta **sonidos/** puedes encontrar los audios del sistema.
 
 - Puedes reemplazar los archivos de sonido por otros.
 - Mantén el mismo nombre de archivo.
-- Usa formatos comunes como `.wav` o `.mp3`.
+- Usa formato `.wav`.
 
 Esto te permite:
 - Personalizar la experiencia
@@ -212,6 +212,7 @@ Lucifer’s Wings no busca ser un simple programa, sino una **herramienta educat
 - Enfocarse en el conocimiento, no en el formato
 
 Disfrútalo
+
 
 
 
