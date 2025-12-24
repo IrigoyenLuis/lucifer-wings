@@ -1,7 +1,7 @@
-# 🪽 Lucifer’s Wings
+# 🪽 Lucifer’s Wings 🪽
 
-**Lucifer’s Wings** es un simulador de exámenes interactivo diseñado para estudiar de forma dinamica, interactiva y sin distracciones.  
-Incluye un **simulador de exámenes** para estudiantes y un **editor visual** que permite crear y modificar exámenes **sin necesidad de saber JSON ni programación**.
+**Lucifer’s Wings** es un simulador de exámenes interactivo diseñado para estudiar de forma **dinámica, clara y personalizada**.  
+Incluye un **simulador de exámenes** para estudiantes y un **editor visual** que permite crear y modificar exámenes **sin necesidad de saber aspectos técnicos (Json, etc.)**.
 
 El objetivo es que cualquier persona pueda **estudiar, practicar y crear exámenes** de manera sencilla, ordenada y confiable.
 
@@ -9,25 +9,46 @@ El objetivo es que cualquier persona pueda **estudiar, practicar y crear exámen
 
 ## 🎓 Enfoque en certificaciones y exámenes reales
 
-Lucifer’s Wings está especialmente pensado para la **preparación de exámenes de certificación y evaluaciones formales**, como:
+Lucifer’s Wings está pensado para la **preparación de exámenes de certificación y evaluaciones formales**, como:
 
 - Exámenes tipo **EGEL Plus**
-- Certificaciones técnicas y profesionales
-- Evaluaciones universitarias y departamentales
-- Simulacros de exámenes oficiales
-- Pruebas de conocimientos estructuradas por secciones
+- Certificaciones técnicas y profesionales 
+- Certificaciones de Idiomas
+- Evaluaciones universitarias y académicas
+- Estudio autodidacta
+- Pruebas de conocimientos y retos personales
+- Cisco
 
 El sistema utiliza una estructura de preguntas **similar a la de certificaciones reales**, incluyendo:
+
 - Reactivos por secciones
-- Preguntas estándar
-- Uso de imágenes y estímulos
+- Preguntas de opción múltiple (una o varias respuestas correctas)
+- Uso de imágenes en preguntas
 - Resultados claros y medibles
 
 ⚠️ **Lucifer’s Wings no sustituye un examen oficial**, pero permite entrenar en un entorno muy cercano al real, ayudando a:
+
 - Reducir la ansiedad del examen
 - Medir el nivel de preparación
 - Detectar áreas débiles
-- Practicar bajo un acercamiento similar al de las examinaciones
+- Practicar bajo un formato similar al de las examinaciones reales
+
+---
+
+## 🚀 Avances recientes (Versiones 1.4 y 1.5)
+
+### Versión 1.4
+- Soporte estable para preguntas de opción múltiple con **una o varias respuestas correctas**.
+- Sistema básico de **validación** y resultados más claros en el simulador.
+
+### Versión 1.5
+- Se añadió el tipo de reactivo **`respuesta_corta(Es decir respuesta abierta)`**.
+- Se admiten respuestas abiertas, tanto sensibles a mayusculas, como no sensibles. 
+- El editor gestiona automáticamente los tipos de pregunta.
+- Validación más estricta, con advertencias de consistencia académica entendibles.
+- Mejor manejo de imágenes y ajustes finos en la interfaz.
+
+Estas versiones marcan el paso de un simulador universal de examenes a una herramienta de **entrenamiento real**.
 
 ---
 
@@ -71,7 +92,7 @@ Este es el programa que usarás para **presentar exámenes**.
 
 - Interfaz clara y enfocada en el examen
 - Soporte para preguntas con imagen
-- Preguntas estándar y multireactivo
+- Preguntas de opción múltiple (una o varias respuestas correctas)
 - Aleatorización de preguntas por sección
 - Sistema de puntaje y resultados
 - Guardado de highscores por examen
@@ -80,11 +101,12 @@ Este es el programa que usarás para **presentar exámenes**.
 
 ## ✏️ LW Editor – Editor Visual de Exámenes
 
-El **Editor** está pensado para **docentes, creadores de contenido o estudiantes avanzados** que quieran crear sus propios exámenes **sin tocar archivos JSON**.
+El **Editor** está pensado para **docentes, creadores de contenido o estudiantes avanzados** que quieran crear sus propios exámenes **sin tocar archivos JSON** salvo que disfruten hacerlo.
 
 ### ¿Qué problema resuelve?
 
-Normalmente, crear un examen en JSON es:
+Normalmente, crear un examen en JSON hecho "a mano" es:
+
 - Difícil
 - Propenso a errores
 - Poco amigable
@@ -96,15 +118,14 @@ Normalmente, crear un examen en JSON es:
 - Crear un examen nuevo desde cero
 - Editar exámenes existentes
 - Agregar, modificar o eliminar preguntas
-- Elegir:
-  - Tipo de reactivo
+- Definir:
   - Área
   - Sección
   - Opciones A, B, C, D
-  - Respuesta correcta
+  - Una o varias respuestas correctas
 - Agregar imágenes a las preguntas
-- Validar el examen automáticamente
-- Guardar sin romper la estructura interna
+- Validar automáticamente la estructura del examen
+- Guardar sin romper el formato interno
 
 ### Flujo típico
 
@@ -141,12 +162,9 @@ Dentro de la carpeta **sonidos/** puedes encontrar los audios del sistema.
 
 - Puedes reemplazar los archivos de sonido por otros.
 - Mantén el mismo nombre de archivo.
-- Usa formato `.wav`.
+- Usa archivos **`.wav`** para asegurar compatibilidad.
 
-Esto te permite:
-- Personalizar la experiencia
-- Silenciar sonidos molestos
-- Adaptar el sistema a tu gusto
+⚠️ Actualmente el sistema solo admite archivos `.wav`.
 
 ---
 
@@ -154,66 +172,11 @@ Esto te permite:
 
 Cada examen vive dentro de su propia carpeta en **MisExamenes/**:
 
-
-⚠️ No es necesario crear esto a mano:  
-👉 **El Editor lo hace automáticamente.**
-
----
-
-## 📂 Importante: ubicación de los archivos
-
-Para que **Lucifer’s Wings funcione correctamente**, **NO cambies la ubicación de los archivos ni carpetas**.
-
-Los siguientes elementos deben permanecer **juntos en la misma carpeta**:
-
-- `LucifersWings.exe`
-- `LW_Editor.exe`
-- `LW_EscritorioAccesosDirectos.exe`
-- Carpeta `MisExamenes/`
-- Carpeta `sonidos/`
-
-⚠️ **No muevas los archivos por separado**, no los renombres ni los ejecutes desde otra carpeta.
-
----
-
-## 👤 Autor
-
-**Luis Irigoyen**  
-Proyecto desarrollado con enfoque educativo, claridad técnica y respeto por el usuario final.
-
----
-
-## 📜 Licencia
-
-**Creative Commons BY-NC-ND 4.0**
-
-Esto significa que puedes:
-- ✅ Usar el software
-- ✅ Compartirlo
-
-Pero no puedes:
-- ❌ Usarlo con fines comerciales
-- ❌ Modificarlo y redistribuir versiones alteradas
-
----
-
-## © Año
-
-© 2025 — Lucifer’s Wings
-
----
-
-## 💬 Nota final
-
-Lucifer’s Wings no busca ser un simple programa, sino una **herramienta educativa seria**, pensada para:
-- Estudiar mejor
-- Crear exámenes reales
-- Evitar errores técnicos
-- Enfocarse en el conocimiento, no en el formato
-
-Disfrútalo
-
-
-
+```text
+MisExamenes/
+ └── MiExamen/
+     ├── examen.json
+     ├── recursos/
+     └── highscores.json
 
 
