@@ -1,75 +1,62 @@
 {
-  "versionSchema": "1.0",
-  "idExamen": "EGELP_MIEXAMEN_001",
-  "nombreExamen": "Mi simulacro EGEL Plus",
-  "disciplina": "ISOFT",
-
+  "versionSchema": "1.1",
+  "idExamen": "EJEMPLO-EXAMEN",
+  "nombreExamen": "Ejemplo de Examen (Release 1.4)",
+  "disciplina": "General",
   "reactivos": [
-
     {
       "tipoReactivo": "estandar",
       "idReactivo": "R-0001",
       "area": "Disciplinar",
       "seccion": 1,
-
       "planteamiento": {
-        "contexto": "Opcional. Puede dejarse vacío.",
-        "pregunta": "Escriba aquí la pregunta."
+        "pregunta": "¿Cuál es la capital de Japón?"
       },
-
-      "recursosVisuales": [
-        {
-          "tipo": "imagen",
-          "archivo": "recursos/ejemplo.png",
-          "descripcion": "Opcional"
-        }
+      "opciones": [
+        { "letra": "A", "texto": "Osaka" },
+        { "letra": "B", "texto": "Tokio" },
+        { "letra": "C", "texto": "Kioto" },
+        { "letra": "D", "texto": "Sapporo" }
       ],
-
+      "respuestasCorrectas": ["B"]
+    },
+    {
+      "tipoReactivo": "estandar",
+      "idReactivo": "R-0002",
+      "area": "Disciplinar",
+      "seccion": 1,
+      "planteamiento": {
+        "pregunta": "Selecciona TODAS las capas del modelo OSI que existen."
+      },
+      "opciones": [
+        { "letra": "A", "texto": "Aplicación" },
+        { "letra": "B", "texto": "Transporte" },
+        { "letra": "C", "texto": "Sesión" },
+        { "letra": "D", "texto": "Compilación" }
+      ],
+      "respuestasCorrectas": ["A", "B", "C"]
+    },
+    {
+      "tipoReactivo": "estandar",
+      "idReactivo": "R-0003",
+      "area": "Transversal",
+      "seccion": 2,
+      "planteamiento": {
+        "pregunta": "Ejemplo con imagen (opcional). Puedes vincular una imagen desde la carpeta recursos/ con el editor."
+      },
       "opciones": [
         { "letra": "A", "texto": "Opción A" },
         { "letra": "B", "texto": "Opción B" },
         { "letra": "C", "texto": "Opción C" },
         { "letra": "D", "texto": "Opción D" }
       ],
-
-      "respuestaCorrecta": "B"
-    },
-
-    {
-      "tipoReactivo": "multireactivo",
-      "idReactivo": "MR-0001",
-      "area": "Transversal",
-      "seccion": 2,
-
-      "estimulo": {
-        "titulo": "Título del texto o caso",
-        "contenido": "Aquí va el texto, caso o escenario completo.",
-
-        "recursosVisuales": [
-          {
-            "tipo": "imagen",
-            "archivo": "recursos/ejemplo2.png",
-            "descripcion": "Opcional"
-          }
-        ]
-      },
-
-      "preguntas": [
+      "respuestasCorrectas": ["A"],
+      "recursosVisuales": [
         {
-          "idPregunta": "MR-0001-P1",
-          "planteamiento": {
-            "pregunta": "Pregunta relacionada con el estímulo."
-          },
-          "opciones": [
-            { "letra": "A", "texto": "Opción A" },
-            { "letra": "B", "texto": "Opción B" },
-            { "letra": "C", "texto": "Opción C" },
-            { "letra": "D", "texto": "Opción D" }
-          ],
-          "respuestaCorrecta": "C"
+          "tipo": "imagen",
+          "archivo": "recursos/pon_aqui_tu_imagen.png"
         }
       ]
     }
-
   ]
 }
