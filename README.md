@@ -42,7 +42,7 @@ El sistema utiliza una estructura de preguntas **similar a la de certificaciones
 - Sistema básico de **validación** y resultados más claros en el simulador.
 
 ### Versión 1.5
-- Se añadió el tipo de reactivo **`respuesta_corta(Es decir respuesta abierta)`**.
+- Se añadió el tipo de reactivo **`respuesta_corta(Es decir respuesta breve)`**.
 - Se admiten respuestas abiertas, tanto sensibles a mayusculas, como no sensibles. 
 - El editor gestiona automáticamente los tipos de pregunta.
 - Validación más estricta, con advertencias de consistencia académica entendibles.
@@ -178,5 +178,6 @@ MisExamenes/
      ├── examen.json
      ├── recursos/
      └── highscores.json
+
 
 
